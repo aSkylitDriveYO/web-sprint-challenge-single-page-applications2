@@ -2,8 +2,8 @@ import React from 'react';
 import Restaurant from './Restaurant';
 import styled from 'styled-components';
 
-export default function Restaurants(props) {
-    return (
+export default function Restaurants(props){
+    return(
         <ResContainer>
             {
                 props.values.map(restaurant => {

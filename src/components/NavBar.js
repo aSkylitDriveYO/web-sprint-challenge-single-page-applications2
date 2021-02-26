@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-export default function NavBar() {
+export default function NavBar(){
     return (
         <Nav>
-            <h1>Lambda Eats</h1>
+            <h1>LAMBDA EATS</h1>
 
             <ul>
                 <Link to='/'>Home</Link>

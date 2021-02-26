@@ -2,17 +2,22 @@ import React from 'react';
 import styled from 'styled-components';
 import pizzatime from '../Assets/pizzaGif.gif';
 
-export default function PizzaSuccess(props) {
+
+export default function PizzaSuccess(props){
+
     const { size, sauce, toppings, glutenFree, instructions, orderName } = props.details;
+
+    console.log(props.details);
 
     return (
         <OrderCard>
-            <h2>Success</h2> <br/>
+            <h2>Success</h2> <br />
             <div>
-                <p>Your {!glutenFree} {size} pizza with {sauce} sauce and {toppings} following your instructions to {instructions} for {orderName} is on it's way!</p> <br/>
+                <p>Your {!glutenFree} {size} pizza with {sauce} sauce and {toppings} following your instructions to {instructions} for {orderName} is on it's way!</p> <br />
             </div>
-            <h3>It's Pizza Time</h3>
+            <h3>It's pizza time!</h3>
             <img src={pizzatime} alt='pizza time'/>
+    
         </OrderCard>
     )
 }

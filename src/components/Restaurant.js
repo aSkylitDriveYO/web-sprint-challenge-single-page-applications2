@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default function Restaurant(props) {
-    console.log('Restaurant.js props',props);
+export default function Restaurant(props){
 
-    const { name,qualities, time, fee, image } = props.values;
+    console.log(props);
+
+    const { name, qualities, time, fee, image } = props.values;
 
     return (
         <ResCard>
             <div className='image'>
-                <Image src={image} alt='' />
+                <Image src={image} alt=''></Image>
             </div>
             <TextContent>
                 <h4>{name}</h4>
